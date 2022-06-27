@@ -1,0 +1,71 @@
+.side-bar {
+  height: max(100vh, 500px);
+  background-color: $clr-primary-dark;
+  width: 60px;
+  padding: 10px 5px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .logo {
+    color: $clr-secondary;
+    text-decoration: none;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: $ff-tertiary;
+  }
+
+  nav {
+    a {
+      font-size: 22px;
+      display: block;
+      text-decoration: none;
+      position: relative;
+      margin-bottom: 20px;
+      &:hover {
+        color: $clr-secondary;
+
+        svg {
+          opacity: 0;
+        }
+        &::after {
+          opacity: 1;
+        }
+      }
+      &::after {
+        content: attr(data-name);
+        font-size: 12px;
+        letter-spacing: 2px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+      &.active {
+        svg {
+          color: $clr-secondary;
+        }
+      }
+    }
+  }
+
+  .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    li {
+      margin-top: 10px;
+      a:hover {
+        svg {
+          color: $clr-secondary;
+        }
+      }
+    }
+  }
+}

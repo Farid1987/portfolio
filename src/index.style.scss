@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font: 300 11px/1.4 $ff-primary, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
