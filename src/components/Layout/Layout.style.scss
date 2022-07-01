@@ -4,5 +4,28 @@
 
   main {
     flex-grow: 1;
+    position: relative;
+    padding: 60px;
+    color: $clr-text;
+    height: 100vh;
+    overflow-y: auto;
+
+    &::before,
+    &::after {
+      font-family: $ff-secondary;
+      position: absolute;
+      color: $clr-secondary;
+      font-size: 20px;
+      opacity: 0.7;
+      left: 20px;
+    }
+    &::before {
+      content: '<body>';
+      top: 20px;
+    }
+    &::after {
+      content: '</body>';
+      bottom: 20px;
+    }
   }
 }

@@ -3,12 +3,13 @@ import { faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 import './Sidebar.style.scss';
+import Logo from '../../assets/images/Logo3-transparent.png';
 
 const Sidebar = () => {
   return (
     <div className="side-bar">
       <Link className="logo" to="/">
-        F
+        <img src={Logo} alt="Logo" />
       </Link>
       <nav>
         <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : undefined)} data-name="Home">

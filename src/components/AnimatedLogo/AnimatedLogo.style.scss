@@ -1,0 +1,19 @@
+.logo-container {
+  opacity: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+
+  .solid-logo {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+.svg-container {
+  stroke: $clr-secondary;
+  stroke-width: 3px;
+  fill: none;
+  opacity: 0.5;
+}
