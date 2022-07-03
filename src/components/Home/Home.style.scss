@@ -20,10 +20,6 @@
     font-size: 90px;
     line-height: 1.1;
     letter-spacing: 4px;
-    &::after,
-    &::before {
-      letter-spacing: normal;
-    }
   }
   p {
     font-family: sans-serif;
@@ -31,7 +27,8 @@
     margin-bottom: 0;
     color: #8d8d8d;
     letter-spacing: 3px;
-
+  }
+  .with-tag {
     &::after,
     &::before {
       letter-spacing: normal;

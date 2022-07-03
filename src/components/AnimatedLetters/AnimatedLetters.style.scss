@@ -5,14 +5,29 @@
   animation-fill-mode: forwards;
   min-width: 10px;
 
+  &-rubberBand {
+    min-width: 10px;
+    display: inline-block;
+    animation: rubberBand 1s;
+    animation-fill-mode: both;
+  }
+
   &-hover {
     min-width: 10px;
     display: inline-block;
-    // animation-fill-mode: both;
 
     &:hover {
-      animation: rubberBand 1s;
       color: $clr-secondary;
+    }
+
+    &.white {
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    &.rubberBand {
+      animation: rubberBand 1s;
     }
   }
 }

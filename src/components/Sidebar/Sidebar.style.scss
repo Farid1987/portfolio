@@ -1,13 +1,14 @@
 .side-bar {
   height: max(100vh, 500px);
   background-color: $clr-primary-dark;
-  width: 60px;
+  width: 70px;
   padding: 20px 5px;
   text-align: center;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-shrink: 0;
 
   .logo {
     color: $clr-secondary;

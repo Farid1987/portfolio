@@ -1,6 +1,24 @@
-// $primary-color: #ffd700; //for animete.css
+$primary-color: #bc2156; //for animete.css
 
 @import 'animate.css';
+@import 'loaders.css/src/animations/pacman.scss';
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
 
 @font-face {
   font-family: 'Helvetica Neue';
