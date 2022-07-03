@@ -58,7 +58,7 @@ const About = () => {
                 <FontAwesomeIcon icon={faSass} color="#cc6699" />
               </div>
               <div className="rect2">
-                <FontAwesomeIcon icon={faReact} color="#5ed4f4" />
+                <FontAwesomeIcon icon={faJsSquare} color="#efd81d" />
               </div>
               <div className="rect3">
                 <FontAwesomeIcon icon={faVuejs} color="#42b883" />
@@ -67,10 +67,10 @@ const About = () => {
                 <FontAwesomeIcon icon={faHtml5} color="#f06529" />
               </div>
               <div className="rect5">
-                <FontAwesomeIcon icon={faJsSquare} color="#efd81d" />
+                <FontAwesomeIcon icon={faCss3Alt} color="#28a4d9" />
               </div>
               <div className="rect6">
-                <FontAwesomeIcon icon={faCss3Alt} color="#28a4d9" />
+                <FontAwesomeIcon icon={faReact} color="#5ed4f4" />
               </div>
             </div>
           </div>
