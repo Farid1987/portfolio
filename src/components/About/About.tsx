@@ -48,6 +48,16 @@ const About = () => {
           <p className="with-tag">
             I'm an innovative Frontend Developer with experience creating and optimizing interactive and user-friendly
             websites. Proficient in HTML5, CSS3, Javascript, and modern libraries and frameworks such as Vue and React.
+            <br />
+            You can see my portfolio{' '}
+            <a href="https://s.id/portfolio-farid" rel="noreferrer" target="_blank">
+              here
+            </a>
+            .
+            <br />
+            <small>
+              <strong>*process moving to this website</strong>
+            </small>
           </p>
         </div>
 
@@ -76,7 +86,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader active={true} type="pacman" />
+      <Loader active={true} type="square-spin" />
     </>
   );
 };

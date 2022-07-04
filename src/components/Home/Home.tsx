@@ -55,7 +55,7 @@ const Home = () => {
         </div>
         <AnimatedLogo />
       </div>
-      <Loader active={true} type="pacman" />
+      <Loader active={true} type="square-spin" />
     </>
   );
 };

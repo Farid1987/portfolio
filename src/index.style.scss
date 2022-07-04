@@ -4,6 +4,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+
+  @media (max-width: 991px) {
+    overflow-y: auto;
+    &.loading {
+      max-height: 100vh;
+      overflow: hidden;
+    }
+  }
 }
 
 * {
@@ -39,4 +47,13 @@ textarea {
   &:focus {
     outline: none;
   }
+}
+
+input,
+textarea {
+  font-family: $ff-primary, sans-serif;
+}
+
+a {
+  color: $clr-secondary;
 }

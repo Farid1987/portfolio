@@ -1,24 +1,7 @@
 $primary-color: #bc2156; //for animete.css
 
 @import 'animate.css';
-@import 'loaders.css/src/animations/pacman.scss';
-
-.loader-hidden {
-  display: none;
-}
-.loader-active {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 50px;
-  height: 50px;
-  animation: fadeOut 1s 1s;
-  animation-fill-mode: forwards;
-}
+@import 'loaders.css/src/animations/square-spin.scss';
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -41,11 +24,6 @@ $primary-color: #bc2156; //for animete.css
     url('./assets/fonts/CoolveticaRg-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
-
-input,
-textarea {
-  font-family: $ff-primary, sans-serif;
 }
 
 .with-tag {
@@ -79,6 +57,7 @@ h1.with-tag {
     content: '</h1>';
   }
 }
+
 p.with-tag {
   &::before {
     content: '<p>';
@@ -86,4 +65,22 @@ p.with-tag {
   &::after {
     content: '</p>';
   }
+}
+
+.loader-hidden {
+  display: none;
+}
+
+.loader-active {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
 }

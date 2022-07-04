@@ -34,4 +34,24 @@
       letter-spacing: normal;
     }
   }
+
+  @media (max-width: 1199px) {
+    h1 {
+      font-size: 70px;
+    }
+    .logo-container svg {
+      width: 380px;
+      height: 380px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 25px;
+    }
+    .logo-container svg {
+      width: 300px;
+      height: 300px;
+    }
+  }
 }
