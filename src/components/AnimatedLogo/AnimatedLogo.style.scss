@@ -3,17 +3,89 @@
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  animation: fadeIn 1s forwards;
 
   .solid-logo {
     position: absolute;
     opacity: 0;
     z-index: 1;
+    animation: fadeIn 2s 4s forwards;
+
+    #solid_polygon_1 {
+      transform-origin: center;
+      animation: rotating 2s 5s linear infinite;
+    }
+  }
+  .outline-logo {
+    animation: fadeOut 1s 4.5s forwards;
   }
 }
 
 .svg-container {
-  stroke: $clr-secondary;
   stroke-width: 3px;
   fill: none;
-  opacity: 0.5;
+  opacity: 0.4;
+
+  #polygon_1,
+  #polygon_2 {
+    stroke: #bc2156;
+  }
+  #text {
+    stroke: $clr-secondary;
+  }
+
+  #polygon_1,
+  #text {
+    stroke-dasharray: 1230;
+    stroke-dashoffset: 1230;
+    animation: draw 3.5s ease forwards;
+    animation-delay: 1s;
+  }
+  #polygon_2,
+  #text {
+    stroke-dasharray: 1230;
+    stroke-dashoffset: -1230;
+    animation: draw 3.5s ease forwards;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
